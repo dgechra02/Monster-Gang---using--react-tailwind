@@ -24,13 +24,13 @@ function App() {
 
   return (
     <div className="flex flex-col items-center h-[110dvh]">
-      <header className="h-[20dvh] flex justify-center items-center w-full bg-linear-to-r from-[#db9bc7] to-[#116781] ">
+      <header className="h-[15dvh] sm:h-[20dvh] flex justify-center items-center w-full bg-linear-to-r from-[#db9bc7] to-[#116781] ">
         <h1 className="monster-h1 font-[font-PermanentMarker] text-3xl sm:text-4xl">
           MONSTERS
         </h1>
       </header>
-      <main className="h-[80dvh] w-full bg-linear-to-r from-[#dd9c25] to-[#febfc7]">
-        <div className="flex flex-col items-center justify-center h-[25%] gap-2">
+      <main className="h-[85dvh] sm:h-[80dvh] w-full bg-linear-to-r from-[#dd9c25] to-[#febfc7]">
+        <div className="flex flex-col items-center justify-center h-[18%] sm:h-[25%] gap-2">
           <h3 className="font-semibold text-lg">Search Monster</h3>
           <input
             onChange={handleChange}
@@ -41,7 +41,7 @@ function App() {
             placeholder="Monster"
           />
         </div>
-        <div className="cards flex justify-center gap-10 flex-wrap h-[75%] overflow-y-auto m-auto px-5 sm:px-30 py-4">
+        <div className="cards flex justify-center gap-5 sm:gap-10 flex-wrap h-[75%] overflow-y-auto m-auto px-5 sm:px-30 py-4">
           {userData
             .filter((user) => {
               if (
